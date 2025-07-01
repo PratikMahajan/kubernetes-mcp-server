@@ -42,7 +42,9 @@ func (p *FullProfile) GetTools(s *Server) []server.ServerTool {
 		s.initNamespaces(),
 		s.initPods(),
 		s.initResources(),
+		s.initOpenShift(),
 		s.initHelm(),
+		s.initOcCli(),
 	)
 }
 
